@@ -1,9 +1,9 @@
 //
-//  REExtendedCompiler.h
+//  RECMBridge.m
 //  REExtendedCompiler
 //  https://github.com/oliromole/REExtendedCompiler.git
 //
-//  Created by Roman Oliichuk on 2012.11.10.
+//  Created by Roman Oliichuk on 2012.11.18.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -39,6 +39,3 @@
  */
 
 #import "RECMBridge.h"
-#import "RECMDefines.h"
-#import "RECMKeyWord.h"
-#import "RECMNSObject.h"

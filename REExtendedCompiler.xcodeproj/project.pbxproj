@@ -17,6 +17,12 @@
 		3026B1F1164E04A800C3374D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3026B1EE164E04A800C3374D /* Default@2x.png */; };
 		3026B1F5164E061800C3374D /* REExtendedCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026B1F4164E061800C3374D /* REExtendedCompiler.m */; };
 		3026B1F9164E071200C3374D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3026B1F8164E071200C3374D /* CoreFoundation.framework */; };
+		30B31CFF1678B68400CCE51F /* RECMBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B31CFE1678B68300CCE51F /* RECMBridge.m */; };
+		30C6E3521659621900C81385 /* RECMNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6E3511659621900C81385 /* RECMNSObject.m */; };
+		30C6E3551659640A00C81385 /* RECMDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6E3541659640A00C81385 /* RECMDefines.m */; };
+		30C6E3581659653600C81385 /* RECMKeyWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6E3571659653600C81385 /* RECMKeyWord.m */; };
+		30F5E2F2164E192C00A5D247 /* RETestARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F5E2F1164E192C00A5D247 /* RETestARC.m */; };
+		30F5E2F8164E195D00A5D247 /* RETestMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F5E2F7164E195C00A5D247 /* RETestMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,18 @@
 		3026B1F3164E061800C3374D /* REExtendedCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REExtendedCompiler.h; sourceTree = "<group>"; };
 		3026B1F4164E061800C3374D /* REExtendedCompiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REExtendedCompiler.m; sourceTree = "<group>"; };
 		3026B1F8164E071200C3374D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		30B31CFD1678B68200CCE51F /* RECMBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECMBridge.h; sourceTree = "<group>"; };
+		30B31CFE1678B68300CCE51F /* RECMBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECMBridge.m; sourceTree = "<group>"; };
+		30C6E3501659621900C81385 /* RECMNSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECMNSObject.h; sourceTree = "<group>"; };
+		30C6E3511659621900C81385 /* RECMNSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECMNSObject.m; sourceTree = "<group>"; };
+		30C6E3531659640A00C81385 /* RECMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECMDefines.h; sourceTree = "<group>"; };
+		30C6E3541659640A00C81385 /* RECMDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECMDefines.m; sourceTree = "<group>"; };
+		30C6E3561659653600C81385 /* RECMKeyWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECMKeyWord.h; sourceTree = "<group>"; };
+		30C6E3571659653600C81385 /* RECMKeyWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECMKeyWord.m; sourceTree = "<group>"; };
+		30F5E2F0164E192C00A5D247 /* RETestARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETestARC.h; sourceTree = "<group>"; };
+		30F5E2F1164E192C00A5D247 /* RETestARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETestARC.m; sourceTree = "<group>"; };
+		30F5E2F6164E195C00A5D247 /* RETestMRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETestMRC.h; sourceTree = "<group>"; };
+		30F5E2F7164E195C00A5D247 /* RETestMRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETestMRC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				3026B1F2164E05F600C3374D /* REExtendedCompiler */,
+				30F5E2F0164E192C00A5D247 /* RETestARC.h */,
+				30F5E2F1164E192C00A5D247 /* RETestARC.m */,
+				30F5E2F6164E195C00A5D247 /* RETestMRC.h */,
+				30F5E2F7164E195C00A5D247 /* RETestMRC.m */,
 				3026B1BD164E046F00C3374D /* REAppDelegate.h */,
 				3026B1BE164E046F00C3374D /* REAppDelegate.m */,
 				3026B1B5164E046F00C3374D /* Supporting Files */,
@@ -123,6 +145,14 @@
 		3026B1F2164E05F600C3374D /* REExtendedCompiler */ = {
 			isa = PBXGroup;
 			children = (
+				30B31CFD1678B68200CCE51F /* RECMBridge.h */,
+				30B31CFE1678B68300CCE51F /* RECMBridge.m */,
+				30C6E3531659640A00C81385 /* RECMDefines.h */,
+				30C6E3541659640A00C81385 /* RECMDefines.m */,
+				30C6E3561659653600C81385 /* RECMKeyWord.h */,
+				30C6E3571659653600C81385 /* RECMKeyWord.m */,
+				30C6E3501659621900C81385 /* RECMNSObject.h */,
+				30C6E3511659621900C81385 /* RECMNSObject.m */,
 				3026B1F3164E061800C3374D /* REExtendedCompiler.h */,
 				3026B1F4164E061800C3374D /* REExtendedCompiler.m */,
 			);
@@ -215,6 +245,12 @@
 				3026B1BB164E046F00C3374D /* main.m in Sources */,
 				3026B1BF164E046F00C3374D /* REAppDelegate.m in Sources */,
 				3026B1F5164E061800C3374D /* REExtendedCompiler.m in Sources */,
+				30F5E2F2164E192C00A5D247 /* RETestARC.m in Sources */,
+				30F5E2F8164E195D00A5D247 /* RETestMRC.m in Sources */,
+				30C6E3521659621900C81385 /* RECMNSObject.m in Sources */,
+				30C6E3551659640A00C81385 /* RECMDefines.m in Sources */,
+				30C6E3581659653600C81385 /* RECMKeyWord.m in Sources */,
+				30B31CFF1678B68400CCE51F /* RECMBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

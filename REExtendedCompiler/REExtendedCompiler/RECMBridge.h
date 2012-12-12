@@ -1,9 +1,9 @@
 //
-//  REExtendedCompiler.h
+//  RECMBridge.h
 //  REExtendedCompiler
 //  https://github.com/oliromole/REExtendedCompiler.git
 //
-//  Created by Roman Oliichuk on 2012.11.10.
+//  Created by Roman Oliichuk on 2012.11.18.
 //  Copyright (c) 2012 Roman Oliichuk. All rights reserved.
 //
 
@@ -38,7 +38,35 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "RECMBridge.h"
+#import <Foundation/Foundation.h>
+
 #import "RECMDefines.h"
-#import "RECMKeyWord.h"
-#import "RECMNSObject.h"
+
+/*
+ * CFStringRef stringRef = (__bridge_retained CFStringRef)[[NSString alloc] init];
+ * NSString *string = (__bridge_transfer NSString*)CFStringCreate();
+ *
+ */
+
+#if __has_feature(objc_arc)
+#   ifndef RECMBridge
+#       define RECMBridge(type, object) ((__bridge type)(object))
+#   endif
+#   ifndef RECMBridgeRetained
+#       define RECMBridgeRetained(type, object) ((__bridge_retained type)(object))
+#   endif
+#   ifndef RECMBridgeTransfer
+#       define RECMBridgeTransfer(type, object) ((__bridge_transfer type)(object))
+#   endif
+#else
+#   ifndef RECMBridge
+#       define RECMBridge(type, object) ((type)(object))
+#   endif
+#   ifndef RECMBridgeRetained
+#       define RECMBridgeRetained(type, object) ((type)(object))
+#   endif
+#   ifndef RECMBridgeTransfer
+#       define RECMBridgeTransfer(type, object) ((type)(object))
+#   endif
+#endif
+
