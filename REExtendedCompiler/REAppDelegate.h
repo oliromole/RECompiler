@@ -43,7 +43,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface REAppDelegate : UIResponder <UIApplicationDelegate>
+#import "REExtendedCompiler.h"
+
+@interface REAppDelegate : UIResponder
+<
+UIApplicationDelegate
+>
 {
 @private
     
